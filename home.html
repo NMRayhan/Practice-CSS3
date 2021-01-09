@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overflow</title>
+    <title>Transform in HTML</title>
     <style>
         .blog{
-            width: 400px;
+            width: 200px;
             height: 200px;
-            border: 2px solid aqua;
-            text-align: justify;
-            overflow: auto;
+            border: 2px solid indianred;
+        }
+        .outer{
+            background-color: red;
+        }
+        .inner{
+            background-color: green;
+            border: 1px solid black;
+        }
+        .outer:hover .inner{
+            transform: rotate(3600deg) scale(.5);
+            transition: all 5s;
         }
     </style>
 </head>
 <body>
-    <div class="blog">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita rem porro modi praesentium explicabo, quae officiis dignissimos aperiam minima recusandae atque. Molestiae, nihil! Tenetur iste id voluptates molestiae delectus porro, vitae quidem nisi repudiandae error quibusdam. Necessitatibus inventore quis quia perferendis? Quos sit consequatur aliquam nobis aut velit ullam consequuntur. Incidunt nulla dolore voluptate mollitia vero labore molestias cumque ut vitae optio. Harum illum amet earum placeat. Recusandae porro doloribus praesentium deserunt cumque voluptate, nisi eveniet laborum, incidunt, vel dolore dicta est corporis sapiente omnis perspiciatis assumenda. Nulla asperiores dolorem eos cupiditate voluptatibus praesentium in aliquam, aspernatur ipsa, magni cum vero velit, delectus ut. Laudantium magni doloribus sint voluptate dolor! Eum dolore veritatis eius placeat itaque ut natus officiis rerum aspernatur neque nihil expedita quisquam eligendi, iusto omnis labore nesciunt ipsam cum esse odio tempora in ad. Quaerat, ut saepe minima delectus sunt, cumque ab aspernatur, laboriosam odit vitae maxime.</p>
-    </div>
+   <div class="blog outer">
+       <div class="blog inner" style="text-align: center;"></div>
+   </div>
 </body>
 </html>
