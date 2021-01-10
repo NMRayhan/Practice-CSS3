@@ -7,7 +7,8 @@
     <style>
         .contaner{
             display: flex;
-            justify-content: space-around;
+            margin: 0 auto;
+            flex-direction: row;
         }
         .blog{
             width: 30%;
@@ -18,6 +19,19 @@
         .blog img{
             width: 100%;
             border-radius: 10px 10px 0px 0px;
+        }
+        @media (max-width: 400px) {
+            .contaner{
+                display: list-item;
+            }
+            .blog{
+                width: 90%;
+            }
+        }
+        @media (max-width:501 ) {
+            .blog{
+                width:50%;
+            }
         }
     </style>
 </head>
@@ -34,18 +48,6 @@
         <div class="blog">
             <img src="images/Food-Lover.jpg" alt="">
             <p>Sunt maxime, quaerat accusantium expedita qui exercitationem? Hic exercitationem unde accusamus nemo pariatur asperiores vel velit ab maxime nam. Quisquam eum voluptatibus asperiores vitae. Tenetur asperiores necessitatibus eos porro voluptatum. Ut consectetur magni cupiditate consequuntur temporibus enim dolorem omnis laboriosam!</p>
-        </div>
-        <div class="blog">
-            <img src="images/Food-Lover.jpg" alt="">
-            <p>Sunt maxime, quaerat accusantium expedita qui exercitationem? Hic exercitationem unde accusamus nemo pariatur asperiores vel velit ab maxime nam. Quisquam eum voluptatibus asperiores vitae. Tenetur asperiores necessitatibus eos porro voluptatum. Ut consectetur magni cupiditate consequuntur temporibus enim dolorem omnis laboriosam!</p>
-        </div>
-        <div class="blog">
-            <img src="images/Food-Lover.jpg" alt="">
-            <p>Sunt maxime, quaerat accusantium expedita qui exercitationem? Hic exercitationem unde accusamus nemo pariatur asperiores vel velit ab maxime nam. Quisquam eum voluptatibus asperiores vitae. Tenetur asperiores necessitatibus eos porro voluptatum. Ut consectetur magni cupiditate consequuntur temporibus enim dolorem omnis laboriosam!</p>
-        </div>
-        <div class="blog">
-            <img src="images/Food-Lover.jpg" alt="">
-            <p>Eum voluptates id expedita harum, dolore architecto enim tenetur eaque atque ab maiores saepe! Maiores ad sit laboriosam totam soluta sequi ipsum eaque molestiae delectus pariatur! Quisquam non, molestiae natus id, voluptatibus perferendis nobis illo deleniti nemo reprehenderit veniam ea.</p>
         </div>
     </div>
 </body>
