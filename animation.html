@@ -7,31 +7,66 @@
     <style>
         .field{
             width: 760px;
-            height: 560px;
+            height: 600px;
             background-color: sandybrown;
         }
         @keyframes slidein{
-            0%{top: 0px;left: 0px;}
-            35%{top: 0px;right: 0px; left: 700px;}
-            55%{top: 500px; right: 0px; bottom: 0px; left: 700px;}
-            75%{top: 500px;left: 0; bottom: 0px;right: 700px;}
-            100%{top: 0px;left: 0px;}
+            0%{bottom: 0px; opacity: 1; background-color: skyblue;}
+            40%{bottom: 700px; opacity: .4; background-color: skyblue;}
+            60%{bottom: 700px; opacity: .6; background-color: skyblue;}
+            80%{bottom: 700px; opacity: .8; background-color: skyblue;}
+            100%{bottom: 700px; opacity: 0; background-color: skyblue;}
         }
-        .field:hover .ball{
-            animation: slidein 6s ease .2s infinite alternate;
+        .field:hover .ball:nth-child(1){
+            animation: slidein 5s linear .15s infinite;
+            width: 20px;
+            height: 30px;
+        }
+        .field:hover .ball:nth-child(2){
+            animation: slidein 4s linear .2s infinite;
+            width: 35px;
+            height: 35px;
+        }
+        .field:hover .ball:nth-child(3){
+            animation: slidein 3s linear .2s infinite;
+            width: 50px;
+            height: 50px;
+        }
+        .field:hover .ball:nth-child(4){
+            animation: slidein 5s linear .2s infinite;
+            width: 20px;
+            height: 20px;
+        }
+        .field:hover .ball:nth-child(5){
+            animation: slidein 4.5s linear .2s infinite;
+            width: 40px;
+            height: 40px;
+        }
+        .field:hover .ball:nth-child(6){
+            animation: slidein 3.5s linear .2s infinite;
+            width: 30px;
+            height: 30px;
         }
         .ball{
-            width: 60px;
-            height: 60px;
-            background-color: seagreen;
+            background-color: skyblue;
             border-radius: 50%;
-            position: relative;
-            left: 0px;
         }
+        .ball:nth-child(1){position: absolute;left: 70px;bottom: 0px;}
+        .ball:nth-child(2){position: absolute;left: 170px;bottom: 0px;}
+        .ball:nth-child(3){position: absolute;left: 270px;bottom: 0px;}
+        .ball:nth-child(4){position: absolute;left: 370px;bottom: 0px;}
+        .ball:nth-child(5){position: absolute;left: 470px;bottom: 0px;}
+        .ball:nth-child(6){position: absolute;left: 550px;bottom: 0px;}
+
     </style>
 </head>
 <body>
     <div class="field">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
         <div class="ball"></div>
     </div>
 </body>
