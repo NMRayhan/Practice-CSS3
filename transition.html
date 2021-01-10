@@ -21,9 +21,33 @@
             background-color: coral;
             transition: all 2s ease .1s;
         }
+        .bat{
+           
+        }
+        .bat:hover{
+            transform: rotate(-60deg);
+            transform-origin: 100% 0%;
+            transition: transform .2s ease-in;
+        }
+        .bat:hover .ball{
+            
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 640px;
+        }
     </style>
 </head>
 <body>
-    <div class="div2"><h3>Nur Mohammad Rayhan</h3></div>
+    <!-- <div class="div2"><h3>Nur Mohammad Rayhan</h3></div> -->
+
+    <div class="field">
+        <img class="bat" src="Images/bat.jpg" alt="">
+        <div class="ball"></div>
+    </div>
 </body>
 </html>
