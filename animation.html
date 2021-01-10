@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <style>
+        .field{
+            width: 760px;
+            height: 560px;
+            background-color: sandybrown;
+        }
+        @keyframes slidein{
+            0%{top: 0px;left: 0px;}
+            35%{top: 0px;right: 0px; left: 700px;}
+            55%{top: 500px; right: 0px; bottom: 0px; left: 700px;}
+            75%{top: 500px;left: 0; bottom: 0px;right: 700px;}
+            100%{top: 0px;left: 0px;}
+        }
+        .field:hover .ball{
+            animation: slidein 6s ease .2s infinite alternate;
+        }
+        .ball{
+            width: 60px;
+            height: 60px;
+            background-color: seagreen;
+            border-radius: 50%;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
